@@ -1,0 +1,24 @@
+# Client:			SR-PS
+# Site:				http://minrlz.com/
+# Filename:			robots.txt
+# Author: 			Steve Robillard
+# Author Email:			srobillard@sr-ps.com
+# Version:			1.0.0
+# Last Modified: 		
+#
+# Description:		
+#
+# ToDo
+# 
+
+# -------------------------------------------------------------------
+# keep robots out of all directories. This content shuld not be 
+# crawled or indexed here, to avoid duplicate content
+
+# keep all bots out of the following directories
+User-agent: *
+Disallow: /statis/
+Disallow: /statis/css
+Disallow: /statis/images
+Disallow: /statis/javascript
+
