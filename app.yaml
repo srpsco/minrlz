@@ -1,0 +1,48 @@
+application: minrlzme
+version: 1
+runtime: python
+api_version: 1
+
+default_expiration: "365d"
+
+handlers:
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+  
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+ 
+- url: /index.*
+  script: main.py
+  
+- url: /
+  script: main.py
+
+- url: /shorten
+  script: main.py
+  
+# - url: /images
+#  static_dir: static/images
+#  secure: optional
+
+# - url: /css
+#  static_dir: static/css
+#  secure: optional
+
+# - url: /javascript
+#  static_dir: static/javascript
+#  secure: optional
+
+# - url: /test/appengine.gif
+#  static_files: static/test/appengine.gif
+#  upload: static/test/appengine.gif
+#  secure: optional
+  
+- url: /.*
+  script: redirect.py
+
+
+  
+  
