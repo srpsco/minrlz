@@ -10,6 +10,7 @@ class MyURL(db.Model):
   LongURL = db.LinkProperty(required=True)
   date = db.DateTimeProperty(auto_now_add=True)
 
+# need to pull the view out of this file and use a template
 class MainPage(webapp.RequestHandler):
   def get(self):
     self.response.out.write("""
