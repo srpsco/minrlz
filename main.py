@@ -48,7 +48,7 @@ class Short(webapp.RequestHandler):
 	self.response.out.write('<br />')
 	self.response.out.write('http://www.minrlz.com/')	
 	#we need to change the meethod of shortening the url to optimize efficiency
-	self.response.out.write(base64.urlsafe_b64encode(str(myurl.key().id())))
+        self.response.out.write(base64.urlsafe_b64encode(str(myurl.key().id())))
 	self.response.out.write('<br />')	
 	self.response.out.write(base64.urlsafe_b64decode(base64.urlsafe_b64encode(str(myurl.key().id()))))
 	self.response.out.write('</pre></body></html>')
