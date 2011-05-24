@@ -31,6 +31,7 @@ class MainPage(webapp.RequestHandler):
 		} catch(err) {}</script>
         </body>
       </html>""")
+  #added the following to prevent amsu getting 404 error on checking if site is up	  
   def head(self):
     self.response.out.write("""
 	""")
