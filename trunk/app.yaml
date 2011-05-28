@@ -1,4 +1,5 @@
 application: minrlzme
+# we will want to have this auto update on successful commit
 version: 1
 runtime: python
 api_version: 1
