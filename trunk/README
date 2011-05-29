@@ -1,2 +1,5 @@
 minrlz is a basic URL shortener that runs on Google App Engine (Python)
 source code is available from http://code.google.com/p/minrlz/
+
+ToDo
+create a tag for the first version of working code
